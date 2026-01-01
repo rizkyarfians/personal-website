@@ -32,7 +32,7 @@ export default function Work() {
 
   return (
     <>
-      <section style={styles.section} onWheel={handleWheel}>
+      <section id="works" style={styles.section} onWheel={handleWheel}>
         <h2 style={styles.heading}>Selected Work</h2>
 
         {/* VIEWPORT */}

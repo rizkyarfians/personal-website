@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section style={styles.wrapper}>
+    <section id="contact" style={styles.wrapper}>
       <div style={styles.inner}>
         <h2 style={styles.title}>
           Let’s build something meaningful

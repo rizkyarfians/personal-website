@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 export default function Sidebar({ onClose, closing }) {
-  const [active, setActive] = useState("projects");
+  const [active, setActive] = useState("about");
+
   return (
-    
     <aside
       style={{
         ...styles.sidebar,
@@ -21,34 +21,33 @@ export default function Sidebar({ onClose, closing }) {
 
       {/* Center */}
       <nav style={styles.nav}>
-  <a
-    href="#projects"
-    onMouseEnter={() => setActive("projects")}
-    onClick={onClose}
-    style={active === "projects" ? styles.navPrimary : styles.navItem}
-  >
-    Projects
-  </a>
+        <a
+          href="#about"
+          onMouseEnter={() => setActive("about")}
+          onClick={onClose}
+          style={active === "about" ? styles.navPrimary : styles.navItem}
+        >
+          About
+        </a>
 
-  <a
-    href="#skills"
-    onMouseEnter={() => setActive("skills")}
-    onClick={onClose}
-    style={active === "skills" ? styles.navPrimary : styles.navItem}
-  >
-    Skills
-  </a>
+        <a
+          href="#works"
+          onMouseEnter={() => setActive("works")}
+          onClick={onClose}
+          style={active === "works" ? styles.navPrimary : styles.navItem}
+        >
+          Works
+        </a>
 
-  <a
-    href="#experience"
-    onMouseEnter={() => setActive("experience")}
-    onClick={onClose}
-    style={active === "experience" ? styles.navPrimary : styles.navItem}
-  >
-    Experience
-  </a>
-</nav>
-
+        <a
+          href="#contact"
+          onMouseEnter={() => setActive("contact")}
+          onClick={onClose}
+          style={active === "contact" ? styles.navPrimary : styles.navItem}
+        >
+          Contact
+        </a>
+      </nav>
 
       {/* Bottom spacer */}
       <div />
