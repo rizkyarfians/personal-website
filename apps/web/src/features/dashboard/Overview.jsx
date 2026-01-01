@@ -122,7 +122,7 @@ const styles = {
   fontSize: "18px",
   borderRadius: "999px",
   opacity: 0.85,
-  background: "rgba(68, 95, 218, 0.75)",
+  background: "#4460daff",
 },
 aboutBtnHover: {
   background: "rgba(231, 0, 0, 1)",
